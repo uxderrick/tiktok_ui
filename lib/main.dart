@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tiktok_ui/bottom_nav.dart';
 import 'package:tiktok_ui/home.dart';
 
 void main() {

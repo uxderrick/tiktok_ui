@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tiktok_ui/controls.dart';
+import 'package:tiktok_ui/page1.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -66,51 +67,7 @@ class _HomeState extends State<Home> {
           PageView(
             scrollDirection: Axis.vertical,
             children: [
-              Container(
-                color: Colors.amber,
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.only(
-                            left: 16.0, top: 56, right: 16, bottom: 8),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            Container(
-                              height: 16,
-                              color: Colors.black,
-                            ),
-                            const SizedBox(
-                              height: 8,
-                            ),
-                            Container(
-                              height: 16,
-                              color: Colors.black,
-                            ),
-                            const SizedBox(
-                              height: 8,
-                            ),
-                            Container(
-                              height: 16,
-                              color: Colors.black,
-                            ),
-                            const SizedBox(
-                              height: 8,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const Padding(
-                      padding:
-                          EdgeInsets.only(right: 16.0, bottom: 16, top: 56),
-                      child: Controls(),
-                    ),
-                  ],
-                ),
-              ),
+              const Page1(),
               Container(
                 color: Colors.pink,
               ),
